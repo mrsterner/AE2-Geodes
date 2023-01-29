@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ae2-geodes",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "AE2 Geodes",
+  "description": "This mod adds se2 geodes",
   "authors": [
-    "Me!"
+    "MrSterner"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,25 +14,22 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/ae2geodes/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "dev.sterner.ae2geodes.AE2Geodes"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "ae2geodes.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric-api": "*",
-    "minecraft": "~1.19.3",
+    "minecraft": "~1.19.2",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
